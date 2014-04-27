@@ -17,17 +17,54 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- CSS Deli House -->
-    <link href="css/delihouse.css" rel="stylesheet">
+    <link href="delihouse.css" rel="stylesheet">
+
+    <script src="js/modernizr.custom.js"></script>
 
 </head>
 
 <body>
 
+    <div id="st-container" class="st-container">
+
+        <div class="st-pusher">
+
+            <nav class="st-menu st-effect-8" id="menu-8">
+                <ul>
+                    <li><a class="fa fa-chevron-right" href="#"> INICIO</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> NOSOTROS</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> PRODUCTOS</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> EMPANADAS</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> PIZZAS</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> CERVEZAS</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> LOCALES</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> DIAGONAL</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> SAN PEDRO</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> DELIVERY</a></li>
+                    <li><a class="fa fa-chevron-right" href="#"> CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="st-content"><!-- this is the wrapper for the content -->
+                <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+                    <div id="st-trigger-effects" class="column">
+                        <button data-effect="st-effect-8">Menu</button>
+                    </div>
+
+                </div><!-- /st-content-inner -->
+            </div><!-- /st-content -->
+        </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+
 
     <!-- Core JavaScript Files -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Sidebar -->
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
 
     <!-- Custom Frogmi JavaScript -->
     <script src="js/delihouse.js"></script>
