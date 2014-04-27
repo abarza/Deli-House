@@ -1,17 +1,18 @@
-verde = #0a9245
+verde = #0f8944
+claro = #e0eae4
+voscuro = #013015
+
+/*Estilos generala */
 
 @font-face
     font-family 'league'
-    src url('fonts/leaguegothic-regular-webfont.eot')
-    src url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg')
-    font-weight normal
     font-style normal
-
-body
-    background verde
+    font-weight normal
+    src url('../fonts/leaguegothic-regular-webfont.eot')
+    src url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg')
 
 *,
 *:after,
@@ -21,146 +22,205 @@ body
 
 html,
 body,
-.st-container,
-.st-pusher,
-.st-content
+.dhcontainer,
+.pusher,
+.content
     height 100%
 
-.st-content
-    overflow-y scroll
+.content,
+.content-inner
+    position relative
+
+.content
     background #f3efe0
+    overflow-y scroll
 
-.st-content,
-.st-content-inner
-    position relative
-
-.st-container
-    position relative
+.dhcontainer
     overflow hidden
-
-.st-pusher
     position relative
-    left 0
-    z-index 99
-    height 100%
-    -webkit-transition -webkit-transform 0.5s
-    transition transform 0.5s
-    &::after
-        position absolute
-        top 0
-        right 0
-        width 0
-        height 0
-        background rgba(0,0,0,0.2)
-        content ''
-        opacity 0
-        -webkit-transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
-        transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
 
-.st-menu-open
-    .st-pusher
+.effect
+    &.dhcontainer
+        -webkit-perspective 1500px
+        -webkit-perspective-origin 0% 50%
+        perspective 1500px
+        perspective-origin 0% 50%
+    .pusher
+        -webkit-transform-style preserve-3d
+        transform-style preserve-3d
+    &.menu-open
+        .pusher
+            -webkit-transform translate3d(300px, 0, 0)
+            transform translate3d(300px, 0, 0)
+        .effect
+            &.menu
+                -webkit-transform translate3d(-100%, 0, 0) rotateY(0deg)
+                -webkit-transition -webkit-transform 0.5s
+                transform translate3d(-100%, 0, 0) rotateY(0deg)
+                transition transform 0.5s
+                visibility visible
+    &.menu
+        -webkit-transform translate3d(-100%, 0, 0) rotateY(90deg)
+        -webkit-transform-origin 100% 50%
+        -webkit-transform-style preserve-3d
+        transform translate3d(-100%, 0, 0) rotateY(90deg)
+        transform-origin 100% 50%
+        transform-style preserve-3d
         &::after
-            width 100%
+            display none
+
+.menu-open
+    .pusher
+        &::after
+            -webkit-transition opacity 0.5s
             height 100%
             opacity 1
-            -webkit-transition opacity 0.5s
             transition opacity 0.5s
-    .st-menu
+            width 100%
+    .menu
         &::after
-            width 0
+            -webkit-transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
             height 0
             opacity 0
-            -webkit-transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
             transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
+            width 0
 
-.st-menu
+.menu
+    -webkit-transition all 0.5s
+    background #e0eae4
+    border-right 5px solid #c2c2c2
+    height 100%
+    left 0
     position absolute
     top 0
-    left 0
-    z-index 100
+    transition all 0.5s
     visibility hidden
     width 300px
-    height 100%
-    background #48a770
-    -webkit-transition all 0.5s
-    transition all 0.5s
+    z-index 100
     &::after
-        position absolute
-        top 0
-        right 0
-        width 100%
-        height 100%
+        -webkit-transition opacity 0.5s
         background rgba(0,0,0,0.2)
         content ''
+        height 100%
         opacity 1
-        -webkit-transition opacity 0.5s
+        position absolute
+        right 0
+        top 0
         transition opacity 0.5s
+        width 100%
     ul
+        listyle none
         margin 0
         padding 0
-        list-style none
         li
             a
-                display block
-                padding 1em 1em 1em 1.2em
-                outline none
-                box-shadow inset 0 -1px rgba(0,0,0,0.2)
-                color #f3efe0
-                text-transform uppercase
-                text-shadow 0 0 1px rgba(255,255,255,0.1)
-                letter-spacing 1px
-                font-weight 400
                 -webkit-transition background 0.3s, box-shadow 0.3s
+                box-shadow inset 0 -1px rgba(0,0,0,0.1)
+                color #313332
+                display block
+                font-family 'league'
+                font-size 1.4em
+                letter-spacing 1px
+                outline none
+                padding 0.5em 1em 0.5em 1.2em
+                text-decoration none
+                text-transform uppercase
                 transition background 0.3s, box-shadow 0.3s
                 &:hover
                     background rgba(0,0,0,0.2)
                     box-shadow inset 0 -1px rgba(0,0,0,0)
                     color #fff
-            &:first-child
+            &:firchild
                 a
                     box-shadow inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2)
     h2
+        color rgba(0,0,0,0.4)
+        font-size 2em
+        font-weight 300
         margin 0
         padding 1em
-        color rgba(0,0,0,0.4)
         text-shadow 0 0 1px rgba(0,0,0,0.1)
-        font-weight 300
-        font-size 2em
 
-
-.st-effect-8
-    &.st-container
-        -webkit-perspective 1500px
-        perspective 1500px
-        -webkit-perspective-origin 0% 50%
-        perspective-origin 0% 50%
-    .st-pusher
-        -webkit-transform-style preserve-3d
-        transform-style preserve-3d
-    &.st-menu-open
-        .st-pusher
-            -webkit-transform translate3d(300px, 0, 0)
-            transform translate3d(300px, 0, 0)
-        .st-effect-8
-            &.st-menu
-                visibility visible
-                -webkit-transition -webkit-transform 0.5s
-                transition transform 0.5s
-                -webkit-transform translate3d(-100%, 0, 0) rotateY(0deg)
-                transform translate3d(-100%, 0, 0) rotateY(0deg)
-    &.st-menu
-        -webkit-transform translate3d(-100%, 0, 0) rotateY(90deg)
-        transform translate3d(-100%, 0, 0) rotateY(90deg)
-        -webkit-transform-origin 100% 50%
-        transform-origin 100% 50%
-        -webkit-transform-style preserve-3d
-        transform-style preserve-3d
-        &::after
-            display none
-
-
-
-.no-csstransforms3d .st-pusher,
-.no-js .st-pusher
+.no-csstransforms3d .pusher,
+.no-js .pusher
     padding-left 300px
+
+.pusher
+    -webkit-transition -webkit-transform 0.5s
+    height 100%
+    left 0
+    position relative
+    transition transform 0.5s
+    z-index 99
+    &::after
+        -webkit-transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
+        background rgba(0,0,0,0.2)
+        content ''
+        height 0
+        opacity 0
+        position absolute
+        right 0
+        top 0
+        transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
+        width 0
+
+/* Estilos Home */
+.home
+        background verde
+
+        header
+            .subtitulo
+                -webkit-transition background 0.3s, box-shadow 0.3s
+                color white
+                display block
+                font-family 'league'
+                font-size 1.7em
+                outline none
+                padding 0.2em 1em 0.2em 1.2em
+                text-decoration none
+                text-transform uppercase
+                transition background 0.3s, box-shadow 0.3s
+         nav
+            .top-button
+                color claro
+                font-size 25px
+                &:active
+                    color voscuro
+                &:focus
+                    -webkit-appearance none
+                    outline 0px !important
+                &:hover
+                    text-shadow 1px 1px 1px voscuro
+                    transition 0.2s
+        section
+            ul
+                listyle none
+                margin 0
+                padding 0
+
+                li
+                    a
+                        -webkit-transition background 0.3s, box-shadow 0.3s
+                        box-shadow inset 0 -1px rgba(0,0,0,0.1)
+                        color claro
+                        display block
+                        font-family 'league'
+                        font-size 2.2em
+                        letter-spacing 1px
+                        outline none
+                        padding 0.5em 1em 0.5em 1.2em
+                        text-decoration none
+                        text-transform uppercase
+                        transition background 0.3s, box-shadow 0.3s
+
+                        &:hover
+                            background rgba(0,0,0,0.2)
+                            box-shadow inset 0 -1px rgba(0,0,0,0)
+                            color #fff
+
+                    &:firstchild
+                        a
+                            box-shadow inset 0 1px rgba(0,0,0,0.5)
+
+
 

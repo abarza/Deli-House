@@ -25,42 +25,58 @@
 
 <body>
 
-    <div id="st-container" class="st-container">
+    <div id="dhcontainer" class="dhcontainer">
 
-        <div class="st-pusher">
-
-            <nav class="st-menu st-effect-8" id="menu-8">
+        <div class="pusher">
+            <!-- Sidebar -->
+            <nav class="menu effect" id="menu">
                 <ul>
-                    <li><a class="fa fa-chevron-right" href="#"> INICIO</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> NOSOTROS</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> PRODUCTOS</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> EMPANADAS</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> PIZZAS</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> CERVEZAS</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> LOCALES</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> DIAGONAL</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> SAN PEDRO</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> DELIVERY</a></li>
-                    <li><a class="fa fa-chevron-right" href="#"> CONTACTO</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Empanadas</a></li>
+                    <li><a href="#">Pizzas</a></li>
+                    <li><a href="#">Cervezas</a></li>
+                    <li><a href="#">Locales</a></li>
+                    <li><a href="#">Diagonal</a></li>
+                    <li><a href="#">San Pedro</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+            <!-- Contenido -->
+            <div class="content home text-center">
+                <div class="content-inner">
 
-            <div class="st-content"><!-- this is the wrapper for the content -->
-                <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-                    <div id="st-trigger-effects" class="column">
-                        <button data-effect="st-effect-8">Menu</button>
-                    </div>
+                    <nav>
+                        <button class="top-button btn btn-link pull-left effect" data-effect="effect"><i class="fa fa-bars"></i></button>
+                        <button class="top-button btn btn-link pull-right"><i class="fa fa-phone"></i></button>
+                    </nav>
 
-                </div><!-- /st-content-inner -->
-            </div><!-- /st-content -->
-        </div><!-- /st-pusher -->
-    </div><!-- /st-container -->
+                    <header>
+                        <img alt="Deli House" src="img/logo-home.png" width="200" height="200">
+                        <p class="subtitulo">Pizzas y Empanadas Caseras</p>
+                    </header>
 
+                    <section>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Locales</a></li>
+                        </ul>
+                    </section>
+
+
+
+
+                </div><!-- /content-inner -->
+            </div><!-- /content -->
+        </div><!-- /pusher -->
+    </div><!-- /dhcontainer -->
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Sidebar -->
     <script src="js/classie.js"></script>
