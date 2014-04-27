@@ -1,6 +1,7 @@
 verde = #0f8944
 claro = #e0eae4
 voscuro = #013015
+negro = #231f20
 
 /*Estilos generala */
 
@@ -8,11 +9,12 @@ voscuro = #013015
     font-family 'league'
     font-style normal
     font-weight normal
-    src url('../fonts/leaguegothic-regular-webfont.eot')
-    src url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg')
+    src  url('../font/league/leaguegothic-regular-webfont.eot')
+    src  url('../font/league/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/league/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../font/league/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../font/league/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg')
+
 
 *,
 *:after,
@@ -174,7 +176,7 @@ body,
                 color white
                 display block
                 font-family 'league'
-                font-size 1.7em
+                font-size 1.4em
                 outline none
                 padding 0.2em 1em 0.2em 1.2em
                 text-decoration none
@@ -192,35 +194,50 @@ body,
                 &:hover
                     text-shadow 1px 1px 1px voscuro
                     transition 0.2s
-        section
+        .home-menu
             ul
+                float none
+                list-style none
                 listyle none
-                margin 0
+                margin 0 auto
                 padding 0
-
                 li
                     a
                         -webkit-transition background 0.3s, box-shadow 0.3s
-                        box-shadow inset 0 -1px rgba(0,0,0,0.1)
+                        box-shadow inset 0 -1px rgba(255,255,255,0.5)
                         color claro
                         display block
                         font-family 'league'
-                        font-size 2.2em
+                        font-size 2.4em
                         letter-spacing 1px
                         outline none
-                        padding 0.5em 1em 0.5em 1.2em
+                        padding 0.2em 1em 0.2em 1.2em
                         text-decoration none
                         text-transform uppercase
                         transition background 0.3s, box-shadow 0.3s
-
                         &:hover
                             background rgba(0,0,0,0.2)
                             box-shadow inset 0 -1px rgba(0,0,0,0)
                             color #fff
+                    .fc
+                        box-shadow inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(255,255,255,0.5)
+        .social
+            margin 10px auto
+            ul
+                float none
+                margin 0 auto
+                padding 0
+                li
+                    display inline
+                    list-style none
+                    a
+                        font-size 30px
+                        color negro
+                        padding 0.2em 1em 0.2em 1.2em
+                        &:hover
+                            color claro
 
-                    &:firstchild
-                        a
-                            box-shadow inset 0 1px rgba(0,0,0,0.5)
+
 
 
 

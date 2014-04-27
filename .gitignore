@@ -2,6 +2,7 @@
 *.sublime-project
 
 util/
+fonts/
 
 ############
 ## Windows
