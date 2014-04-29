@@ -2,8 +2,10 @@ verde = #0f8944
 claro = #e0eae4
 voscuro = #013015
 negro = #231f20
-
+light = #f1f1f1
 /*Estilos generala */
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla\+One)
 
 @font-face
     font-family 'league'
@@ -36,6 +38,12 @@ body,
 .content
     background #f3efe0
     overflow-y scroll
+
+.desc-text
+    font-size 1.3em
+    font-family 'Fjalla One', 'sans-serif'
+    padding 1em 0.2em
+
 
 .dhcontainer
     overflow hidden
@@ -70,6 +78,31 @@ body,
         transform-style preserve-3d
         &::after
             display none
+
+header
+        .titulo
+            -webkit-transition background 0.3s, box-shadow 0.3s
+            color voscuro
+            display block
+            font-family 'league'
+            font-size 2.5em
+            outline none
+            padding 0.6em 1em 0.2em 1.2em
+            text-decoration none
+            text-transform uppercase
+            transition background 0.3s, box-shadow 0.3s
+     nav
+        .top-button
+            color verde
+            font-size 25px
+            &:active
+                color voscuro
+            &:focus
+                -webkit-appearance none
+                outline 0px !important
+            &:hover
+                text-shadow 1px 1px 1px voscuro!important
+                transition 0.2s
 
 .menu-open
     .pusher
@@ -165,6 +198,8 @@ body,
         top 0
         transition opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
         width 0
+
+
 
 /* Estilos Home */
 .home
@@ -265,6 +300,26 @@ body,
         border none
         color claro
         font-weight bold
+
+/* Estilos Nosotros */
+.nosotros
+    background light
+    section
+        .photo
+            display table
+            width 100%
+            height 300px
+            padding 100px 0
+            text-align: center
+            color #fff
+            background: url('../img/restaurant.jpg') no-repeat center center scroll
+            background-color #f1f1f1
+            -webkit-background-size cover
+            -moz-background-size cover
+            background-size cover
+            -o-background-size cover
+
+
 
 
 
