@@ -20,7 +20,7 @@ light = #f1f1f1
 
 *,
 *:after,
-*::before
+*:before
     -moz-box-sizing border-box
     box-sizing border-box
 
@@ -30,6 +30,12 @@ body,
 .pusher,
 .content
     height 100%
+
+.btn-link
+    &:focus,
+    &:active
+        color voscuro!important
+
 
 .content,
 .content-inner
@@ -319,8 +325,136 @@ header
             background-size cover
             -o-background-size cover
 
+/* Estilos Locales */
+
+.locales
+    .locales-menu
+            ul
+                float none
+                list-style none
+                listyle none
+                margin 0 auto
+                padding 0
+                li
+                    a
+                        -webkit-transition background 0.3s, box-shadow 0.3s
+                        box-shadow inset 0 -1px rgba(255,255,255,0.5)
+                        color verde
+                        display block
+                        font-family 'league'
+                        font-size 2.4em
+                        letter-spacing 1px
+                        outline none
+                        padding 0.2em 1em 0.2em 1.2em
+                        text-decoration none
+                        text-transform uppercase
+                        transition background 0.3s, box-shadow 0.3s
+                        &:hover
+                            background rgba(0,0,0,0.2)
+                            box-shadow inset 0 -1px rgba(0,0,0,0)
+                            color #fff
+                    .fc
+                        box-shadow inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(255,255,255,0.5)
+
+    .photo
+        -moz-background-size cover
+        -o-background-size cover
+        -webkit-background-size cover
+        background-color #f1f1f1
+        background-size cover
+        background: url('../img/diagonal.jpg') no-repeat center center scroll
+        color #fff
+        display table
+        height 200px
+        margin-bottom 10px
+        padding 100px 0
+        text-align: center
+        width 100%
 
 
+/* Estilos Productos */
 
+.productos
+    .productos-menu
+            ul
+                float none
+                list-style none
+                listyle none
+                margin 0 auto
+                padding 0
+                li
+                    a
+                        -webkit-transition background 0.3s, box-shadow 0.3s
+                        box-shadow inset 0 -1px rgba(255,255,255,0.5)
+                        color verde
+                        display block
+                        font-family 'league'
+                        font-size 2.4em
+                        letter-spacing 1px
+                        outline none
+                        padding 0.2em 1em 0.2em 1.2em
+                        text-decoration none
+                        text-transform uppercase
+                        transition background 0.3s, box-shadow 0.3s
+                        &:hover
+                            background rgba(0,0,0,0.2)
+                            box-shadow inset 0 -1px rgba(0,0,0,0)
+                            color #fff
+                    .fc
+                        box-shadow inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(255,255,255,0.5)
+
+/* Estilos Pizzas */
+
+.pizzas,
+.empanadas
+    h3
+        font-family 'league'
+        font-size 2em
+        text-transform uppercase
+        box-shadow inset 0 -1px rgba(0,0,0,0.1)
+        padding-top 0
+        .fc
+            box-shadow inset 0 -1px rgba(0,0,0,0.1), inset 0 1px rgba(0,0,0,0.1)
+
+    ul
+        margin 0 auto
+        padding 0
+        li
+            display inline-block
+            list-style none
+            background black
+            padding 0.2em 0.8em 0.3em 0.8em
+            margin -1px
+            color claro
+            text-align center
+            font-size 1em
+            text-transform uppercase
+            font-family 'league'
+            letter-spacing 0.1em
+    .ingredientes
+        color verde
+        font-family 'Fjalla One', 'sans-serif'
+        font-size 1.2em
+        margin 0
+        padding 0.1em 0 0.2em 0
+        text-transform uppercase
+    .photo
+        -moz-background-size cover
+        -o-background-size cover
+        -webkit-background-size cover
+        background-color #f1f1f1
+        background-size cover
+        background: url('../img/pizza.jpg') no-repeat center center scroll
+        color #fff
+        display table
+        height 200px
+        margin-bottom 10px
+        padding 100px 0
+        text-align: center
+        width 100%
+    .precio
+        font-family 'Fjalla One', 'sans-serif'
+        font-size 1.6em
+        letter-spacing 0em
 
 
