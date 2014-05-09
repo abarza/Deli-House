@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-    <title>Locales - Deli House Móvil</title>
+    <title>Deli House Móvil</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +27,9 @@
     <link href="css/delifont.css" rel="stylesheet">
 
     <!-- CSS Deli House -->
-    <link href="css/delihouse.css" rel="stylesheet">
+    <link href="css/deli.css" rel="stylesheet">
+    <link href="css/delistyle.css" rel="stylesheet">
+
 
     <script src="js/modernizr.custom.js"></script>
 
@@ -35,85 +37,125 @@
 
 <body>
 
-    <div id="dhcontainer" class="dhcontainer">
+   <div class="page-container fill">
 
-        <div class="pusher">
-            <!-- Sidebar -->
-            <nav class="menu effect" id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="empanadas.html">Empanadas</a></li>
-                    <li><a href="pizzas.html">Pizzas</a></li>
-                    <li><a href="cervezas.html">Cervezas</a></li>
-                    <li><a href="locales.html">Locales</a></li>
-                    <li><a href="diagonal.html">Diagonal</a></li>
-                    <li><a href="sanpedro.html">San Pedro</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+      <div class="nosotros row row-offcanvas row-offcanvas-left">
 
-            <!-- Contenido -->
-            <div class="content locales text-center">
-                <div class="content-inner">
-
-                    <nav>
-                        <button class="top-button btn btn-link pull-left effect" data-effect="effect"><i class="icon-menu"></i></button>
-                        <button class="top-button btn btn-link pull-right"><i class="icon-phone"></i></button>
-                    </nav>
-
-                    <header>
-                        <p class="titulo">Locales</p>
-                    </header>
-
-                    <div class="photo"></div>
-                    <section class="locales-menu">
-                        <ul class="col-xs-10 text-center">
-                            <li><a class="fc" href="diagonal.html">Diagonal</a></li>
-                            <li><a href="sanpedro.html">San Pedro</a></li>
-                        </ul>
-                    </section>
-
-
-
-
-
-
-                </div><!-- /content-inner -->
-            </div><!-- /content -->
-        </div><!-- /pusher -->
-    </div><!-- /dhcontainer -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="bici">
-                        <i class="icon-bicycle"></i><br>
-                        <span class="chica">Ven en tu</span><br>
-                        Bicicleta<br>
-                        <span class="chica">Tenemos</span><br>
-                        Estacionamiento<br>
-                        <span class="chica">para ti.</span><br>
-                        <i class="icon-bicycle"></i>
-                    </p>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="empanadas.html">Empanadas</a></li>
+                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="cervezas.html">Cervezas</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="diagonal.html">Diagonal</a></li>
+                <li><a href="sanpedro.html">San Pedro</a></li>
+            </ul>
         </div>
-    </div>
+
+        <!-- top navbar -->
+        <div class="navbar navbar-default" role="navigation">
+           <div class="container">
+            <div class="navbar-header">
+                <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
+                <button class="top-button btn btn-link pull-right"><i class="icon-phone"></i></button>
+            </div>
+           </div>
+        </div>
+
+        <!-- main area -->
+        <div class="nosotros col-xs-12 col-sm-9 text-center">
+
+            <header>
+                <p class="titulo">Diagonal</p>
+            </header>
+
+            <section class="contenido">
+                <div id="map"></div>
+            <div class="container">
+            <p class="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            </div>
+
+            </section>
+
+            <section class="col-xs-12 submenu">
+                <div class="col-xs-6"><a class="activo" href="#">Diagonal</a></div>
+                <div class="col-xs-6"><a href="sanpedro.html">San Pedro</a></div>
+            </section>
+
+
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-    <!-- Sidebar -->
-    <script src="js/classie.js"></script>
-    <script src="js/sidebarEffects.js"></script>
+    <!--
+            You need to include this script on any page that has a Google Map.
+            When using Google Maps on your own site you MUST signup for your own API key at:
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+            After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
+        -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&sensor=false"></script>
 
     <!-- Custom Deli House JavaScript -->
     <script src="js/delihouse.js"></script>
+
+    <script>
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var myLatlng = new google.maps.LatLng(-36.826634,-73.041304);
+    var mImage = 'img/marker.png';
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 18,
+        scrollwheel: true,
+        zoomControl: true,
+        draggable: true,
+        streetViewControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        panControl: false,
+
+        // The latitude and longitude to center the map (always required)
+        center: myLatlng, // Deli House San Pedro
+
+        // How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#333739"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#2ecc71"}]},{"featureType":"poi","stylers":[{"color":"#2ecc71"},{"lightness":-7}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-28}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"visibility":"on"},{"lightness":-15}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-18}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-34}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#333739"},{"weight":0.8}]},{"featureType":"poi.park","stylers":[{"color":"#2ecc71"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#333739"},{"weight":0.3},{"lightness":10}]}]
+    };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Deli House Diagonal',
+      icon: mImage
+    });
+    }
+
+    </script>
+
 
 </body>
 
