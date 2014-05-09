@@ -27,7 +27,9 @@
     <link href="css/delifont.css" rel="stylesheet">
 
     <!-- CSS Deli House -->
-    <link href="css/delihouse.css" rel="stylesheet">
+    <link href="css/deli.css" rel="stylesheet">
+    <link href="css/delistyle.css" rel="stylesheet">
+
 
     <script src="js/modernizr.custom.js"></script>
 
@@ -35,83 +37,60 @@
 
 <body>
 
-    <div id="dhcontainer" class="dhcontainer">
+   <div class="page-container fill">
 
-        <div class="pusher">
-            <!-- Sidebar -->
-            <nav class="menu effect" id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="empanadas.html">Empanadas</a></li>
-                    <li><a href="pizzas.html">Pizzas</a></li>
-                    <li><a href="cervezas.html">Cervezas</a></li>
-                    <li><a href="locales.html">Locales</a></li>
-                    <li><a href="diagonal.html">Diagonal</a></li>
-                    <li><a href="sanpedro.html">San Pedro</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
 
-            <!-- Contenido -->
-            <div class="content productos text-center">
-                <div class="content-inner">
-
-                    <nav>
-                        <button class="top-button btn btn-link pull-left effect" data-effect="effect"><i class="icon-menu"></i></button>
-                        <button class="top-button btn btn-link pull-right"><i class="icon-phone"></i></button>
-                    </nav>
-
-                    <header>
-                        <p class="titulo">Productos</p>
-                    </header>
-
-                    <section class="productos-menu">
-                        <ul class="col-xs-10 text-center">
-                            <li><a class="fc" href="pizzas.html">Pizzas</a></li>
-                            <li><a href="empanadas.html">Empanadas</a></li>
-                            <li><a href="cervezas.html">Cervezas</a></li>
-                            <li><a href="otrosproductos.html">Otros Productos</a></li>
-                        </ul>
-                    </section>
-
-
-
-
-
-
-                </div><!-- /content-inner -->
-            </div><!-- /content -->
-        </div><!-- /pusher -->
-    </div><!-- /dhcontainer -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="bici">
-                        <i class="icon-bicycle"></i><br>
-                        <span class="chica">Ven en tu</span><br>
-                        Bicicleta<br>
-                        <span class="chica">Tenemos</span><br>
-                        Estacionamiento<br>
-                        <span class="chica">para ti.</span><br>
-                        <i class="icon-bicycle"></i>
-                    </p>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="empanadas.html">Empanadas</a></li>
+                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="cervezas.html">Cervezas</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="diagonal.html">Diagonal</a></li>
+                <li><a href="sanpedro.html">San Pedro</a></li>
+            </ul>
         </div>
-    </div>
+
+        <!-- top navbar -->
+        <div class="navbar navbar-default" role="navigation" style="background-color:#f1f1f1">
+           <div class="container">
+            <div class="navbar-header">
+                <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
+                <button class="top-button btn btn-link pull-right"><i class="icon-phone"></i></button>
+            </div>
+           </div>
+        </div>
+
+        <!-- main area -->
+        <div class="productos col-xs-12 col-sm-9 text-center">
+
+            <header>
+                <p class="titulo">Productos</p>
+            </header>
+
+            <section class="productos-menu">
+                <ul class="col-xs-10 text-center">
+                    <li><a class="fc" href="pizzas.html">Pizzas</a></li>
+                    <li><a href="empanadas.html">Empanadas</a></li>
+                    <li><a href="cervezas.html">Cervezas</a></li>
+                    <li><a href="otrosproductos.html">Otros Productos</a></li>
+                </ul>
+            </section>
+
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
-    <!-- Sidebar -->
-    <script src="js/classie.js"></script>
-    <script src="js/sidebarEffects.js"></script>
 
     <!-- Custom Deli House JavaScript -->
     <script src="js/delihouse.js"></script>

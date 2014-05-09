@@ -7,7 +7,9 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.home').height($(window).height());
     $('.nosotros').height($(window).height());
-    $('.locales').height($(window).height());
+    $('.productos').height($(window).height());
+    $('.otros-productos').height($(window).height());
+
 });
 
 
