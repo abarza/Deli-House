@@ -10,6 +10,12 @@ light = #f1f1f1
 @import url(http://fonts.googleapis.com/css?family=Fjalla\+One)
 
 @font-face
+  font-family 'Droid Sans'
+  font-style normal
+  font-weight 400,700
+  src local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff')
+
+@font-face
     font-family 'league'
     font-style normal
     font-weight normal
@@ -18,6 +24,7 @@ light = #f1f1f1
          url('../font/league/leaguegothic-regular-webfont.woff') format('woff'),
          url('../font/league/leaguegothic-regular-webfont.ttf') format('truetype'),
          url('../font/league/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg')
+
 
 
 *,
@@ -135,6 +142,21 @@ header
     width 100%
     height 300px
 
+
+.photo
+    display table
+    width 100%
+    height 300px
+    padding 100px 0
+    text-align: center
+    color #fff
+    background: url('../img/restaurant.jpg') no-repeat center center scroll
+    background-color #f1f1f1
+    -webkit-background-size cover
+    -moz-background-size cover
+    background-size cover
+    -o-background-size cover
+
 // Estilos Home
 
 .home
@@ -166,7 +188,7 @@ header
         color white
         display block
         font-family 'league'
-        font-size 1.4em
+        font-size 1.15em
         outline none
         padding 0.2em 1em 0.2em 1.2em
         text-decoration none
@@ -251,20 +273,14 @@ header
     padding-bottom 30px
     section
         .photo
-            display table
-            width 100%
-            height 300px
-            padding 100px 0
-            text-align: center
-            color #fff
             background: url('../img/restaurant.jpg') no-repeat center center scroll
-            background-color #f1f1f1
-            -webkit-background-size cover
-            -moz-background-size cover
-            background-size cover
-            -o-background-size cover
+
     .contenido
         padding-bottom 40px
+    .desc-text
+        margin-top 10px
+        font-family 'Droid Sans'
+
 
 // Estilos Locales
 
@@ -299,19 +315,8 @@ header
                         box-shadow inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(255,255,255,0.5)
 
     .photo
-        -moz-background-size cover
-        -o-background-size cover
-        -webkit-background-size cover
-        background-color #f1f1f1
-        background-size cover
         background: url('../img/diagonal.jpg') no-repeat center center scroll
-        color #fff
-        display table
-        height 200px
-        margin-bottom 10px
-        padding 100px 0
-        text-align: center
-        width 100%
+
 
 
 // Estilos Productos
@@ -350,7 +355,8 @@ header
 
 .pizzas,
 .empanadas,
-.otros-productos
+.otros-productos,
+.cervezas
     background white
     padding-bottom 80px
     h3
@@ -385,22 +391,84 @@ header
         padding 0.1em 0 0.2em 0
         text-transform uppercase
     .photo
-        -moz-background-size cover
-        -o-background-size cover
-        -webkit-background-size cover
-        background-color #f1f1f1
-        background-size cover
         background: url('../img/pizza.jpg') no-repeat center center scroll
-        color #fff
-        display table
-        height 200px
-        margin-bottom 10px
-        padding 100px 0
-        text-align: center
-        width 100%
     .precio
         font-family 'Fjalla One', 'sans-serif'
         font-size 1.6em
         letter-spacing 0em
 
+    .premium
+        font-size 1em
+
+.col-xs-12
+    .col-xs-12
+        padding-right 5px
+        padding-left 5px
+
 // Otros Productos
+
+
+// cervezas
+
+.cervezas
+    .cc
+        padding-top 0px
+
+    .zeropadding
+        padding-left 0px
+        padding-right 0px
+
+    .alcohol
+        padding 2px
+        font-size 0.6em
+        color verde
+        vertical-align top
+
+    .bigbeer
+        padding-bottom 0px
+        margin-bottom -5px
+
+    .fc
+        margin-bottom 2px
+        margin-top 2px
+
+    .ciudad
+        font-size 1em
+        color verde!important
+
+    .row
+        margin 20px 0px
+
+    .ingredientes
+        color voscuro
+
+    .nacional
+        .alcohol
+            font-size 0.8em
+
+    .titulo
+        line-height 1em
+
+    .ssection
+        margin-top 20px
+
+        .subtl
+            color verde
+
+    .pais
+        font-size 1em
+        padding-bottom 0px
+
+    .photo
+        display table
+        width 100%
+        height 200px
+        padding 100px 0
+        text-align: center
+        color #fff
+        background: url('../img/cerveza.png') no-repeat center center scroll
+        background-color #f1f1f1
+        -webkit-background-size cover
+        -moz-background-size cover
+        background-size cover
+        -o-background-size cover
