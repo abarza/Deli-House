@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-    <title>Deli House Móvil</title>
+    <title>Otros Productos - Deli House Móvil</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -48,12 +48,13 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="empanadas.html">Empanadas</a></li>
-                <li><a href="pizzas.html">Pizzas</a></li>
-                <li><a href="cervezas.html">Cervezas</a></li>
+                <li class="leftmenu"><a href="empanadas.html">Empanadas</a></li>
+                <li class="leftmenu"><a href="pizzas.html">Pizzas</a></li>
+                <li class="leftmenu"><a href="cervezas.html">Cervezas</a></li>
                 <li><a href="locales.html">Locales</a></li>
-                <li><a href="diagonal.html">Diagonal</a></li>
-                <li><a href="sanpedro.html">San Pedro</a></li>
+                <li class="leftmenu"><a href="locales.html">Diagonal</a></li>
+                <li class="leftmenu"><a href="sanpedro.html">San Pedro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
@@ -62,19 +63,19 @@
            <div class="container">
             <div class="navbar-header">
                 <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
-                <button class="top-button btn btn-link pull-right"><i class="icon-phone"></i></button>
+                <a href="contacto.html" class="top-button btn btn-link pull-right"><i class="icon-phone"></i></a>
             </div>
            </div>
         </div>
 
         <!-- main area -->
         <div class="otros-productos col-xs-12 col-sm-9 text-center">
-            <header>
+           <header>
                 <p class="titulo">Otros Productos</p>
             </header>
 
             <section class="contenido">
-                <div class="photo" style="background-image:url('img/cafe2.jpg')"></div>
+                <img class="img-responsive" src="img/cafe2.jpg" alt="Cafe">
                 <div class="container">
                 <p class="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -83,19 +84,18 @@
                 </div>
             </section>
 
-
-
         </div><!-- /.col-xs-12 main -->
     </div><!--/.row-->
   </div><!--/.container-->
 </div><!--/.page-container-->
 
-    <!-- Core JavaScript Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!-- Core JavaScript Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-    <!-- Custom Deli House JavaScript -->
-    <script src="js/delihouse.js"></script>
+<!-- Custom Deli House JavaScript -->
+<script src="js/delihouse.js"></script>
 
 </body>
 
+</html>
