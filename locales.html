@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-    <title>Deli House Móvil</title>
+    <title>Local Diagonal - Deli House Móvil</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -77,17 +77,19 @@
 
             <section class="contenido">
                 <div id="map"></div>
+                <p class="invita">Ubicación Local</p>
                 <div class="container">
 
                     <section class="contenido contacto">
                     <div class="container">
                         <div class="row">
                             <ul>
-                                <li class="fc"><a href="#" title="Direccion">Av. Diagonal Pedro Aguirre Cerda 1234 A, Concepción</a></li>
-                                <li><a href="tel:41246238" title="telefono"><i class="icon-phone"></i>+56 41 246238</a></li>
+                                <li class="fc"><a class="direccion" href="#" title="Direccion">Av. Diagonal Pedro Aguirre Cerda 12-34 A, Concepción</a></li>
+                                <li class="tel"><a href="tel:56041246238" title="telefono"><i class="icon-phone"></i>+56 041 246238</a></li>
                             </ul>
 
                             <div class="disponibilidad">
+                                <h5>Disponibilidad</h5>
                                 <div class="row">
                                     <p class="pull-left"><b>Entregas a Domicilio</b></p>
                                     <p class="pull-right text-danger"><b>No</b></p>
@@ -101,7 +103,7 @@
                             <div class="horario">
                                 <h5>Horario</h5>
                                 <div class="row">
-                                    <p class="pull-left"><b>Lunes a Viernes:</b></p>
+                                    <p class="pull-left"><b>Lun a Vie:</b></p>
                                     <p class="pull-right text-success">9:30 a 23:30 hrs</p>
                                 </div>
                                 <div class="row">
@@ -158,7 +160,7 @@
     var mImage = 'img/marker.png';
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 18,
+        zoom: 16,
         scrollwheel: true,
         zoomControl: true,
         draggable: true,

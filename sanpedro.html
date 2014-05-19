@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-    <title>San Pedro - Deli House Móvil</title>
+    <title>Local San Pedro - Deli House Móvil</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -77,16 +77,18 @@
 
             <section class="contenido">
                 <div id="map"></div>
+                <p class="invita">Local y Área de Reparto</p>
             <div class="container">
                 <section class="contenido contacto">
                     <div class="container">
                         <div class="row">
                             <ul>
-                                <li class="fc"><a href="#" title="Direccion">Av. Los Aromos 1511, San Pedro de la Paz</a></li>
-                                <li><a href="tel:412734088" title="telefono"><i class="icon-phone"></i>+56 41 273-4088</a></li>
+                                <li class="fc"><a class="direccion" href="#" title="Direccion">Av. Los Aromos 1511, San Pedro de la Paz</a></li>
+                                <li class="tel"><a href="tel:0412734088" title="telefono"><i class="icon-phone"></i>+56 041 2734088 </a></li>
                             </ul>
 
                             <div class="disponibilidad">
+                                <h5>Disponibilidad</h5>
                                 <div class="row">
                                     <p class="pull-left"><b>Entregas a Domicilio</b></p>
                                     <p class="pull-right text-success"><b>Si</b></p>
@@ -100,7 +102,7 @@
                             <div class="horario">
                                 <h5>Horario</h5>
                                 <div class="row">
-                                    <p class="pull-left"><b>Lunes a Viernes:</b></p>
+                                    <p class="pull-left"><b>Lun a Vie:</b></p>
                                     <p class="pull-right text-success">12:30 a 23:30 hrs</p>
                                 </div>
                                 <div class="row">
@@ -155,9 +157,10 @@
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var myLatlng = new google.maps.LatLng(-36.844009,-73.102973);
     var mImage = 'img/marker.png';
+    var bermudaTriangle;
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 18,
+        zoom: 14,
         scrollwheel: true,
         zoomControl: true,
         draggable: true,
@@ -173,6 +176,7 @@
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#333739"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#2ecc71"}]},{"featureType":"poi","stylers":[{"color":"#2ecc71"},{"lightness":-7}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-28}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"visibility":"on"},{"lightness":-15}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-18}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-34}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#333739"},{"weight":0.8}]},{"featureType":"poi.park","stylers":[{"color":"#2ecc71"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#333739"},{"weight":0.3},{"lightness":10}]}]
     };
+    var repartoSanPedro;
 
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
@@ -181,12 +185,42 @@
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
+
+    // Crea el Marker
     var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Deli House Diagonal',
-      icon: mImage
+        position: myLatlng,
+        map: map,
+        title: 'Deli House Diagonal',
+        icon: mImage
     });
+
+    marker.setMap(map);
+
+    // Define the LatLng coordinates for the polygon's path.
+    var reparto = [
+        new google.maps.LatLng(-36.858265663182785, -73.09126853942871),
+        new google.maps.LatLng(-36.85860903743336, -73.09967994689941),
+        new google.maps.LatLng(-36.85119181040039, -73.10397148132324),
+        new google.maps.LatLng(-36.84693344746993, -73.11212539672852),
+        new google.maps.LatLng(-36.83436302532317, -73.11650276184082),
+        new google.maps.LatLng(-36.83360736034709, -73.09796333312988),
+        new google.maps.LatLng(-36.837935158699096, -73.0949592590332),
+        new google.maps.LatLng(-36.839102935348684, -73.08929443359375),
+        new google.maps.LatLng(-36.84322435747173, -73.0891227722168),
+        new google.maps.LatLng(-36.84590316274031, -73.09564590454102)
+    ];
+
+    // Construct the polygon.
+    repartoSanPedro = new google.maps.Polygon({
+        paths: reparto,
+        strokeColor: '#F1F1F1',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#0f8944',
+        fillOpacity: 0.35
+    });
+
+    repartoSanPedro.setMap(map);
     }
 
     </script>

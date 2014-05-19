@@ -401,7 +401,7 @@ header
             box-shadow inset 0 -1px rgba(0,0,0,0.1), inset 0 1px rgba(0,0,0,0.1)
 
     ul
-        margin 0 auto
+        margin 0 auto 20px auto
         padding 0
         li
             display inline-block
@@ -525,6 +525,21 @@ header
     .titulo
         font-size 2em
         font-family 'league'
+    .direccion
+        -webkit-transition background 0.3s, box-shadow 0.3s
+        box-shadow inset 0 -1px rgba(0,0,0,0.1)
+        color verde
+        display block
+        font-family 'league'
+        font-size 1.6em
+        letter-spacing 0px
+        background none
+        line-height 0.9em
+        outline none
+        padding 0.2em 0.5em 0.2em 0.5em
+        text-decoration none
+        text-transform uppercase
+        transition background 0.3s, box-shadow 0.3s
 
     ul
         float none
@@ -533,24 +548,49 @@ header
         margin 0 auto
         padding 0 20px
         li
+        .tel
+            padding 10px 0
+        a
+            -webkit-transition background 0.3s, box-shadow 0.3s
+            box-shadow inset 0 -1px rgba(0,0,0,0.1)
+            color white
+            background verde
+            display inline-block
+            font-family 'league'
+            font-size 2em
+            letter-spacing 0px
+            line-height 0.9em
+            outline none
+            padding 0.2em 0.5em 0.2em 0.5em
+            text-decoration none
+            text-transform uppercase
+            transition background 0.3s, box-shadow 0.3s
+            border-radius 5px
+            &:hover
+                    background rgba(0,0,0,0.2)
+                    box-shadow inset 0 -1px rgba(0,0,0,0)
+                    color verde
             a
                 -webkit-transition background 0.3s, box-shadow 0.3s
                 box-shadow inset 0 -1px rgba(0,0,0,0.1)
-                color verde
-                display block
+                color white
+                background verde
+                display inline-block
                 font-family 'league'
                 font-size 1.6em
                 letter-spacing 0px
                 line-height 0.9em
                 outline none
-                padding 0.2em 1em 0.2em 1.2em
+                padding 0.2em 0.5em 0.2em 0.5em
                 text-decoration none
                 text-transform uppercase
                 transition background 0.3s, box-shadow 0.3s
+                border-radius 5px
+
                 &:hover
                     background rgba(0,0,0,0.2)
                     box-shadow inset 0 -1px rgba(0,0,0,0)
-                    color #fff
+                    color verde
                 .fc
                     box-shadow inset 0 1px rgba(0,0,0,0.1), inset 0 -1px rgba(0,0,0,0.1)
 
@@ -558,9 +598,6 @@ header
     .horario
         margin 10px 20px
         padding 0 20px
-
-    .horario
-        box-shadow inset 0 1px rgba(0,0,0,0.1), inset 0 -1px rgba(0,0,0,0.1)
         h5
             font-family 'league'
             font-size 1.6em
@@ -569,6 +606,10 @@ header
             text-transform uppercase
             color verde
             padding 1em 0 0.2em 0
+    .horario
+        box-shadow inset 0 1px rgba(0,0,0,0.1), inset 0 -1px rgba(0,0,0,0.1)
+        margin-bottom 50px
+
 
 
 
