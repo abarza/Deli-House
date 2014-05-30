@@ -37,9 +37,9 @@
 
 <body>
 
-   <div class="page-container fill">
+   <div class="fonda page-container">
 
-    <div class="container">
+    <div class="prod container">
       <div class="row row-offcanvas row-offcanvas-left">
 
         <!-- sidebar -->
@@ -59,7 +59,7 @@
         </div>
 
         <!-- top navbar -->
-        <div class="navbar navbar-default" role="navigation">
+        <div class="navbar navbar-default hidden-md hidden-sm hidden-lg" role="navigation">
            <div class="container">
             <div class="navbar-header">
                 <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
@@ -75,8 +75,9 @@
                     </header>
 
                     <section class="contenido">
-                        <img class="img-responsive" src="img/empanadas.jpg" alt="empanadas" style="margin-bottom: 15px">
-                        <div class="container">
+                        <img class="img-responsive visible-xs" src="img/empanadas.jpg" alt="empanadas" style="margin-bottom: 15px">
+                        <img class="visible-sm visible-md visible-lg" src="img/empanadas.jpg" alt="empanadas" style="margin: 0 auto 15px auto">
+                        <div class="container-fluid">
                             <p class="ingredientes">Lunes a Domingo</p>
 
                             <div class="col-xs-6">
@@ -143,6 +144,13 @@
                             </div>
 
                             <div class="col-xs-6">
+                                <h3>Choclo<br>Queso</h3>
+                                <ul>
+                                    <li><span class="precio">$1.190</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xs-12">
                                 <h3>Macha<br>Queso</h3>
                                 <ul>
                                     <li><span class="precio">$1.290</span></li>
@@ -151,9 +159,9 @@
 
                             <div class="col-xs-12">
                                 <h3>Deli Premium</h3>
-                                <p class="ingredientes premium">Queso - Carne - Choclo - Tocino - Aceituna</p>
+                                <p class="ingredientes premium">Queso - Carne - Choclo - Tocino - Aceitunas</p>
                                 <ul>
-                                    <li>Tamaño Doble<br><span class="precio">$1.790</span></li>
+                                    <li>Doble Tamaño<br><span class="precio">$1.790</span></li>
                                 </ul>
                             </div>
 
@@ -179,7 +187,7 @@
 
                     </section>
 
-                    <section class="col-xs-12 submenu">
+                    <section class="col-xs-12 col-md-9 col-sm-9 submenu">
                         <div class="col-xs-6"><a href="empanadas.html">Diagonal</a></div>
                         <div class="col-xs-6"><a class="activo" href="#">San Pedro</a></div>
                     </section>

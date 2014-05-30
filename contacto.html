@@ -37,9 +37,9 @@
 
 <body>
 
-   <div class="page-container fill">
+   <div class="fonda page-container">
 
-    <div class="container">
+    <div class="prod container">
       <div class="row row-offcanvas row-offcanvas-left">
 
         <!-- sidebar -->
@@ -59,11 +59,11 @@
         </div>
 
         <!-- top navbar -->
-        <div class="navbar navbar-default" role="navigation">
+        <div class="navbar navbar-default hidden-md hidden-sm hidden-lg" role="navigation">
            <div class="container">
             <div class="navbar-header">
                 <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
-                <a href="#" class="top-button btn btn-link pull-right"><i class="icon-phone"></i></a>
+                <a href="contacto.html" class="top-button btn btn-link pull-right"><i class="icon-phone"></i></a>
             </div>
            </div>
         </div>
@@ -75,21 +75,21 @@
             </header>
 
             <section class="contenido contacto">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <p class="titulo">Local Diagonal</p>
                     <ul>
-                        <li><a href="tel:56041246238" title="telefono"><i class="icon-phone"></i>+56 041 246238</a></li>
+                        <li><a href="tel:041246238" title="telefono"><i class="icon-phone"></i>+56 041 246238</a></li>
                     </ul>
 
                     <div class="disponibilidad">
                         <div class="row">
                             <p class="pull-left"><b>Entregas a Domicilio</b></p>
-                            <p class="pull-right text-danger"><b>No</b></p>
+                            <p class="pull-right text-danger"><b>NO</b></p>
                         </div>
                         <div class="row">
                             <p class="pull-left"><b>Retiro en el Local</b></p>
-                            <p class="pull-right text-success"><b>Si</b></p>
+                            <p class="pull-right text-success"><b>SI</b></p>
                         </div>
                     </div>
 
@@ -97,17 +97,17 @@
                 <div class="row">
                     <p class="titulo">Local San Pedro</p>
                     <ul>
-                        <li><a href="tel:560412734088" title="telefono"><i class="icon-phone"></i>+56 041 273-4088</a></li>
+                        <li><a href="tel:0412734088" title="telefono"><i class="icon-phone"></i>+56 041 273 4088</a></li>
                     </ul>
 
                     <div class="disponibilidad">
                         <div class="row">
                             <p class="pull-left"><b>Entregas a Domicilio</b></p>
-                            <p class="pull-right text-success"><b>Si</b></p>
+                            <p class="pull-right text-success"><b>SI</b></p>
                         </div>
                         <div class="row">
                             <p class="pull-left"><b>Retiro en el Local</b></p>
-                            <p class="pull-right text-success"><b>Si</b></p>
+                            <p class="pull-right text-success"><b>SI</b></p>
                         </div>
                     </div>
 
@@ -128,6 +128,10 @@
 
 <!-- Custom Deli House JavaScript -->
 <script src="js/delihouse.js"></script>
+<script>
+    $('.contacto').height($(window).height());
+</script>
+
 
 </body>
 

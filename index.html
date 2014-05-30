@@ -37,9 +37,9 @@
 
 <body>
 
-   <div class="page-container fill">
+   <div class="ho fonda page-container">
 
-    <div class="home container">
+    <div class="prod container">
       <div class="row row-offcanvas row-offcanvas-left">
 
         <!-- sidebar -->
@@ -59,7 +59,7 @@
         </div>
 
         <!-- top navbar -->
-        <div class="navbar navbar-default" role="navigation">
+        <div class="navbar navbar-default hidden-md hidden-lg hidden-sm" role="navigation">
            <div class="container">
             <div class="navbar-header">
                 <button class="top-button btn btn-link pull-left effect" data-toggle="offcanvas" data-target=".sidebar-nav"><i class="icon-menu"></i></button>
@@ -79,6 +79,7 @@
                     <li><a class="fc" href="nosotros.html">Nosotros</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="locales.html">Locales</a></li>
+                    <li class="hidden-xs"><a href="locales.html">Contacto</a></li>
                 </ul>
             </section>
             <section class="social">
@@ -95,7 +96,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <p class="bici">
-                                <i class="icon-bicycle"></i><br>
+
                                 <span class="chica">Ven en tu</span><br>
                                 Bicicleta<br>
                                 <span class="chica">Tenemos</span><br>
@@ -119,6 +120,10 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
     <!-- Custom Deli House JavaScript -->
+    <script>
+        $('#sidebar').height($(window).height());
+    </script>
+
     <script src="js/delihouse.js"></script>
 
 </body>
