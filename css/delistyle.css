@@ -25,7 +25,7 @@ body {
   min-height: 100%;
 }
 body {
-  background: #e0eae4;
+  background: #fff;
 }
 header .titulo {
   -webkit-transition: background 0.3s, box-shadow 0.3s;
@@ -159,6 +159,13 @@ header .titulo {
   background-size: cover;
   -o-background-size: cover;
 }
+.icon-phone:before {
+  content: '\e804';
+  font-size: 1.09em;
+}
+.ind {
+  background: #e0eae4;
+}
 .ho .navbar-default,
 .ho background verde,
 .ho border-color verde,
@@ -187,7 +194,7 @@ header .titulo {
 .home {
   background: #0f8944;
   vertical-align: middle;
-  margin-bottom: 0px;
+  margin-bottom: 60px;
 }
 .home header {
   padding-top: 0px;
@@ -287,6 +294,9 @@ header .titulo {
   color: #e0eae4;
   height: 100%;
 }
+.modal-body {
+  top: 15%;
+}
 .modal-body .bici {
   font-family: 'league';
   font-size: 40px;
@@ -336,9 +346,11 @@ header .titulo {
 .nosotros .contenido {
   padding-bottom: 40px;
 }
-.nosotros .desc-text {
+.desc-text {
   margin-top: 10px;
   font-family: 'Droid Sans';
+  line-height: 1.6em;
+  text-align: justify;
 }
 .locales {
   padding-bottom: 30px;
@@ -689,6 +701,9 @@ header .titulo {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 990px) {
+  body {
+    background: #e0eae4;
+  }
   .home header,
   .productos header {
     padding-top: 50px;

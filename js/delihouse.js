@@ -5,10 +5,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-    $('.home').height($(window).height());
+    //$('.home').height($(window).height());
     //$('.nosotros').height($(window).height());
-    $('.productos').height($(window).height());
-    $('.otros-productos').height($(window).height());
+    //$('.productos').height($(window).height());
+    //$('.otros-productos').height($(window).height());
     //$('.contacto').height($(window).height());
     //$('#sidebar').height($(window).height());
 
